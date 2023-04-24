@@ -76,7 +76,7 @@ All settings are saved to a binary file that is located at:
 com.apple.Terminal.plist
 ```
 
-My setting file, com.apple.Terminal.plist, is available here. Download and save to ~/Library/Preferences/
+My setting file, com.apple.Terminal.plist, is available [here](https://github.com/sheepnir/mac-setup/tree/main/MacSettingFiles). Download and save to ~/Library/Preferences/
 
 ### Configure and install Chrome, 1Password, and Sublime Text
 
@@ -168,7 +168,7 @@ Intall github cli running:
 brew install gh
 ```
 
-see more info [here](https://cli.github.com/)
+See more info [here](https://cli.github.com/)
 
 ## OS Productivity
 
@@ -225,9 +225,12 @@ These are my preferred settings for `Finder` and the `Dock`.
   - Advanced -> Show warning before changing an extension -> No
   - Advanced -> When performing a search -> Search the current folder
 - View
+
   - Show Status Bar
   - Show Path Bar
   - Show Tab Bar
+
+  See link to the config file [here](https://github.com/sheepnir/mac-setup/tree/main/MacSettingFiles)
 
 ## Menu Bar Customization
 
@@ -257,4 +260,4 @@ I use sublime because it allows me to open new tabs / files without the need to 
 
 VS Code is my preferred code editor.
 
-You can view all of my VS Code settings / extensions [here](https://github.com/).
+You can view all of my VS Code settings / extensions [here](https://github.com/sheepnir/mac-setup/tree/main/VSCodeSettings).
