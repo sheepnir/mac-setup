@@ -261,3 +261,12 @@ I use sublime because it allows me to open new tabs / files without the need to 
 VS Code is my preferred code editor.
 
 You can view all of my VS Code settings / extensions [here](https://github.com/sheepnir/mac-setup/tree/main/VSCodeSettings).
+
+## Docker
+
+I mostly develop new projects inside Doker containers as it simplifies the delivery to my clients.
+Installation:
+
+```sh
+brew install docker
+```
