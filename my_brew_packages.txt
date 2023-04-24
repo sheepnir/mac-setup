@@ -1,0 +1,7 @@
+app-cleaner
+slack
+vlc
+gimp
+brave-browser
+dozer
+grammarly-desktop
