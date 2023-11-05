@@ -1,4 +1,26 @@
-# New MAC Setup
+# My MAC Setup
+
+This repo contains info on all the apps / tools / settings I use on my Mac machines.
+
+## What Macbook do I have?
+
+I am currently using the 2022 13" M2 Macbook Air as my laptop and 2023 M3 Max Macbook Pro 14" as my desktop/laptop. I also have a 2022 Macbook Pro 13" from work that I use to access sensative customer information.
+
+These are the specs at a glance:
+
+- Macbook Pro Laptop
+  - Apple M1
+    - 8-Core CPU
+    - 8-Core GPU
+  - 8GB RAM
+  - 256GB SSD
+- Mac Studio Laptop
+  - Apple M1 Max
+    - 10-Core CPU
+    - 24-Core GPU
+    - 16-Core Neural Engine
+  - 32GB RAM
+  - 512GB SSD
 
 ## Initial Cleanup and Finder Setup
 
