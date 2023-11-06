@@ -40,19 +40,6 @@ These are the specs at a glance:
 
 Open the Terminal and install oh-my-zsh from [ohmyszh.sh](https://ohmyz.sh/)
 
-Istall oh-my-zsh plugins:
-
-```
-	brew install zsh-autosuggestions
-```
-
-- Change to the half-life theme and git plugin by editing ~/.zshrc file value:
-
-```
-ZSH_THEME="half-life"
-plugins=(git macos web-search)
-```
-
 Install Xcode command line:
 
 ```
@@ -66,6 +53,19 @@ Install homebrew from [brew.sh](https://brew.sh)
 ```
 
 Run any follow-up commands
+
+Install oh-my-zsh plugins:
+
+```
+	brew install zsh-autosuggestions
+```
+
+- Change to the half-life theme and git plugin by editing ~/.zshrc file value:
+
+```
+ZSH_THEME="half-life"
+plugins=(git macos web-search)
+```
 
 ## Warp Terminal Configuration
 
