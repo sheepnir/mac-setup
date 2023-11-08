@@ -77,12 +77,6 @@ Install Warp termial
 
 Configure fonts, look & feel and AI. Set as the default terminal.
 
-Install Git
-
-```
-	brew install git
-```
-
 (Optional) Install powerlevel10K:
 
 ```
@@ -96,26 +90,89 @@ Install Git
 
 ## Utilities Settings
 
+Privacy: install Proton VPN
+
+```
+  brew install --cask protonvpn
+```
+
+Login to your account and connect to the fastest node.
+
 Install first set of Apps an utilities:
 
 ```
-  brew install --cask google-chrome raycast visual-studio-code sublime-text 1password 1password-cli bartender aldente betterdisplay shottr
+  brew install --cask google-chrome raycast visual-studio-code sublime-text 1password 1password-cli bartender aldente betterdisplay shottr rectangle grammarly
 ```
 
 Set app each application in this order:
 
 - 1Password (set the CLI and SSH Angent)
 - Google Chrome (setup as the default browser)
+  - Extensions:
+    - [1Password Nightly](https://chrome.google.com/webstore/detail/1password-nightly-%E2%80%93-passw/gejiddohjgogedgjnonbofjigllpkmbf?hl=en)
+    - [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)
+    - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-grammar-checker/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
 - Raycast (setup Raycast AI)
+- Rectangle (screen organizer)
 - VS Code
 - Sublime text
 - Bartender (dock organization)
 - Aldente (Battery optimization)
 - BetterDisplay (Disply optimization for docking)
 - Shottr (Screenshut capture)
+- Grammarly (spell and grammar checker)
 
 Clean homebrew by running:
 
 ```
   brew cleanup
+```
+
+## Development environment setup on VM with Ubuntu Linux
+
+Install UTM virtualization:
+
+```
+  brew install --cask utm
+```
+
+## Development environment setup (local)
+
+### Setup Git
+
+Install Git
+
+```
+	brew install git gh
+```
+
+Configure git with your name/email:
+
+```
+git config --global user.name user_name
+git config --global user.email email
+git config --global core.editor vim
+```
+
+In the termial, go to ~/Developer:
+
+```
+gh repo clone sheepnir/mac-setup
+```
+
+setup the authentication.
+
+### Python setup
+
+Installation
+
+```
+  brew install python
+```
+
+(optional) Add alias to the .zprofile file:
+
+```
+  echo "alias python=python3" >> ~/.zprofile
+  echo "alias pip=pip3" >> ~/.zprofile
 ```
