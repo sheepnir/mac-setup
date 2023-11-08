@@ -77,6 +77,8 @@ Install Warp termial
 
 Configure fonts, look & feel and AI. Set as the default terminal.
 
+**Setup permissions** under Settings -> Privacy Security -> App Management
+
 (Optional) Install powerlevel10K:
 
 ```
@@ -125,16 +127,27 @@ Set app each application in this order:
 Clean homebrew by running:
 
 ```
-  brew cleanup
+  brew autoremove && brew cleanup -s && rm -rf "$(brew --cache)"
+  brew doctor && brew missing
 ```
 
 ## Development environment setup on VM with Ubuntu Linux
+
+Update Homebrew:
+
+```
+  brew update && brew upgrade && brew upgrade --greedy
+  brew autoremove && brew cleanup -s && rm -rf "$(brew --cache)"
+  brew doctor && brew missing
+```
 
 Install UTM virtualization:
 
 ```
   brew install --cask utm
 ```
+
+Download Ubuntu Linux for ARM from
 
 ## Development environment setup (local)
 
@@ -175,4 +188,12 @@ Installation
 ```
   echo "alias python=python3" >> ~/.zprofile
   echo "alias pip=pip3" >> ~/.zprofile
+```
+
+### Useful utilities
+
+Install the followings:
+
+```
+  brew install ffmpeg yt-dlp youtube-dl
 ```
