@@ -133,6 +133,9 @@ Clean homebrew by running:
 
 ## Development environment setup on VM with Ubuntu Linux
 
+Download Ubuntu arm64.iso file from:
+https://cdimage.ubuntu.com/jammy/daily-live/current/
+
 Update Homebrew:
 
 ```
@@ -147,7 +150,33 @@ Install UTM virtualization:
   brew install --cask utm
 ```
 
-Download Ubuntu Linux for ARM from
+### Setup Ubuntu VM
+
+Add the ISO file to UTM and un-check "Use Apple Virtualization"
+
+In the Ubuntu install:
+
+1. Select Normal Installation, Download Updates, and Install 3rd Party...
+2. Select "Erase disk and install Ubuntu" option
+3. Choose simple user and password and set to "Log in automatically"
+
+After the install open the terminal and run:
+
+```
+  sudo apt install spice-vdagent spice-webdavd
+  gsettings set org.gnome.desktop.background picture-uri ''
+  gsettings set org.gnome.desktop.background primary-color 'rgb(66, 81, 100)'
+```
+
+Shut down the VM and close the window. On the settings, select sharing and change "Directory Share Mode" to "WebDAV". Reboot the VM. Click Shared folder and confirm location. Open Files in Ubuntu and click "Other Locations" -> "Spice Client".
+
+Run the following privacy settings in the terminal:
+
+```
+  sudo apt purge -y apport apport-symptoms popularity-contest ubuntu-report whoopsie
+
+  sudo apt autoremove -y
+```
 
 ## Development environment setup (local)
 
