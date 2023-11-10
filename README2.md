@@ -178,6 +178,32 @@ Run the following privacy settings in the terminal:
   sudo apt autoremove -y
 ```
 
+### Set development environment
+
+Install Git
+
+```
+  sudo apt install git
+```
+
+Update Python:
+
+```
+  sudo add-apt-repository ppa:deadsnakes/ppa
+
+  sudo apt update
+
+  sudo apt install python3.11 # or any version
+
+  echo "alias python='python3.11'" >> ~/.bashrc
+
+  source ~/.bashrc
+
+```
+
+Install VSCode:
+https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
+
 ## Development environment setup (local)
 
 ### Setup Git
